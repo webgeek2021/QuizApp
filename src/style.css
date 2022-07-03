@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    overflow: hidden;
+}
+#container , #start_frame{
+    width: 800px;
+    height: 100vh;
+    background-color: #212548;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#start_frame button{
+    height: 50px;
+    width: 200px;
+    background-image: linear-gradient(to right ,#c75391,#bf69e1  );
+    border: none;
+    box-shadow: 0px -2px 18px white;
+    font-size: 24px;
+}
+#start_frame button:hover{
+    box-shadow: 0px -2px 18px #c75391;
+    background-color: whitesmoke;
+}
+#ques_cont{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    width: 700px;
+    overflow-y: scroll;
+}
+#heading{
+    margin-bottom: 15px;
+    font-size: 50px;
+    color: white;
+}
+
+#score{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 31px;
+}
+#q_no{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    align-items: center;
+    width: 100%;
+}
+#question_container{
+    width: 98%;
+    background-color: #383d6e;
+    color: white;
+    border: 2px solid black;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+}
+#question_container p{
+    font-size: 24px;  
+}
+#q_body{
+    margin: 10px;
+}
+
+#question_container #options{
+    display: grid;
+
+    width: 100%;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 100px 102px;
+    justify-content: space-around;
+    column-gap: 10px;
+    align-items: center;
+}
+.btn{
+    margin: 10px;
+    height: 70px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 13px;
+    font-size: 18px;
+}
+#options button.btn:hover {
+    font-size: 30px;
+    
+}
+.check-btn{
+    height: 30px;
+    width: 99px;
+    font-size: 19px;
+    cursor: pointer;
+}
+#submit-btn{
+    top: 18px;
+    position: absolute;
+    width: 138px;
+    height: 52px;
+    background-image: linear-gradient(to right ,#c75391,#bf69e1  );
+    right: 0px;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+    border: none;
+    color: white;
+    font-size: 23px;
+}
+#submit-btn:hover{
+    background-image: linear-gradient(to right ,#bf69e1,#c75391  );
+    color: black;
+}
+#heading:hover{
+    color:  #bf69e1;
+}
+#score:hover{
+    color:#c75391;
+}
+
